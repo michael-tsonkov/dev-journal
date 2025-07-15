@@ -144,7 +144,7 @@ async function handleRequest(req,res) {
 		// handle other static files
 		staticServer.serve(req,res,function onStaticComplete(err){
 			if (err) {
-				if (req.headers["accept"].includes("text/html")) {
+				if (req.headers["accept"] && req.headers["accept"].includes("text/html")) {
 					serveFile("/404.html",200,{ "X-Not-Found": "1" },req,res)
 					.catch(console.error);
 				}

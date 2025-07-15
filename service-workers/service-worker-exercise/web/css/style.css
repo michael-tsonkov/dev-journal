@@ -27,7 +27,7 @@ body {
 	right: 5px;
 	width: 55px;
 	height: 49px;
-	background: url(/images/offline.png) 0px 0px/55px 49px no-repeat;
+	/* background: url(/images/offline.png) 0px 0px/55px 49px no-repeat; */
 }
 
 #connectivity-status.hidden {
